@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .custom-div {
+      background-color: #e2e8f0;
+      padding: 1rem; /* Adjust as needed */
+      margin: 1rem; /* Adjust as needed */
+    }
+
+    .custom-div:hover,
+    .custom-div:focus {
+      background-color: #f0f4f8; /* Adjust hover and focus styles as needed */
+    }
+
+    .first-p:first-child {
+      color: green;
+    }
+
+    .last-p:last-child {
+      color: red;
+    }
+
+    .even-p:nth-child(even) {
+      background-color: #d1fae5;
+    }
+
+    .odd-p:nth-child(odd) {
+      background-color: #a7f3d0;
+    }
+
+    .custom-link::before {
+      content: "🔗";
+      margin-right: 0.5rem;
+    }
+
+    .custom-link:hover {
+      color: #3182ce;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="custom-div">
+    <h1>Hello, World!</h1>
+    <p class="first-p:first-child">This is the first paragraph.</p>
+    <p class="last-p:last-child">This is the last paragraph.</p>
+    <p class="even-p:nth-child(even)">This is an even-numbered paragraph.</p>
+    <p class="odd-p:nth-child(odd)">This is an odd-numbered paragraph.</p>
+    <a href="https://example.com" class="custom-link">Visit Example Website</a>
+  </div>
+
+</body>
+</html>
